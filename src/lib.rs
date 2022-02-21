@@ -203,7 +203,13 @@ If you do changes to the contract, re-build, delete sub-account, then re-deploy.
       $ near login 
      near cli generated private key (kept in jason file on computer) and public key as a URL param to NEAR wallet -> browser opens up, log into the testnet account.
 1. Build contract and run all tests (ensure all are passed)
+   Run this command in the path where build.sh is
     $ ./build.sh
+   
+   If experience 'Permission Denied', then run the following at the path where the build.sh is (i.e. where you are now):
+    $ chmod +x build.sh
+
+   Run tests to ensure all are passed:
     $ cargo test -- --nocapture
 2. Create sub-account (or delete and re-create it)
    This will clear the state and give a fresh start (also delete will transfer back the 100 NEAR tokens back into parent account):
