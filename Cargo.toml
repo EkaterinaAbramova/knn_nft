@@ -1,0 +1,30 @@
+[package]
+name = "knn_supervised_learning" # k nearest neighbours
+version = "0.1.0"
+authors = ["Katya <e7.abramova@gmail.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = "4.0.0-pre.4"
+csv = "1.1"
+
+#hex = "0.4.3" # (used for hashing, so that others can't see some values within the contract)
+#polars = "0.19.1" # dataframe package
+#polars-core = {version = "0.19.1", features=["ndarray"]}
+#arrow = "4.3.0"
+# smartcore = "0.2.0" # machine learning library 
+#serde = "1.0.136"
+#serde_derive = "1.0.136"
+
+[profile.release]
+codegen-units = 1
+# Tell `rustc` to optimize for small code size.
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+# Opt into extra safety checks on arithmetic operations https://stackoverflow.com/a/64136471/249801
+overflow-checks = true
