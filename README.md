@@ -1,4 +1,6 @@
-# Rust Smart Contract: K Nearest Neighbours Machine Learning Algo
+# NEAR Blockchain | Rust Smart Contract: K Nearest Neighbours Machine Learning Algo
+
+This contract is written in Rust programming language, and was developed using the Visual Studio Code IDE.
 
 ## Algo Description
 
@@ -50,7 +52,7 @@ cargo test -- --nocapture
 
 ### Create Necessary Accounts
 
-This smart contract is intended to be interacted with using a development account. Go to [NEAR URL](https://wallet.testnet.near.org) and create a testnet account, for example called `myacc.testnet`. For help see [Dev Accounts](https://docs.near.org/docs/concepts/account#dev-accounts). Following this run the command below, which lets the near cli generate a private key, kept in the jason file on your computer, and public key as a URL parameter to NEAR wallet by logging into your account from your Terminal (browswer opens up):
+This smart contract is intended to be interacted with using the development account. Go to [NEAR URL](https://wallet.testnet.near.org) and create a testnet account, for example called `myacc.testnet`. For help see [Dev Accounts](https://docs.near.org/docs/concepts/account#dev-accounts). Following this run the command below, which lets the near cli generate a private key, kept in the jason file on your computer, and public key as a URL parameter to NEAR wallet by logging into your account from your Terminal (browswer opens up):
 ```bash
 near login
 ```
